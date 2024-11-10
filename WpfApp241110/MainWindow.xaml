@@ -1,12 +1,16 @@
 ﻿<Window x:Class="WpfApp241110.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp241110"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="DataContext Example" Height="200" Width="400">
+    <StackPanel>
+        <!-- 부모 컨트롤인 StackPanel에 DataContext 설정 -->
+        <StackPanel.DataContext>
+            <local:MainViewModel Text="Initial Text"/>
+        </StackPanel.DataContext>
 
-    </Grid>
+        <!-- Text 속성이 ViewModel의 Text에 바인딩됨 -->
+        <TextBox Text="{Binding Path=Text, Mode=TwoWay}" Width="200" Margin="10"/>
+        <TextBlock Text="{Binding Path=Text}" FontSize="16" Margin="10"/>
+    </StackPanel>
 </Window>
