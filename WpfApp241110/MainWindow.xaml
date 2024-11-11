@@ -1,12 +1,12 @@
-﻿<Window x:Class="WpfApp241110.MainWindow"
+﻿<Window x:Class="WpfApp241111.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp241110"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="INotifyPropertyChanged Example" Height="200" Width="400">
     <Grid>
-
+        <StackPanel>
+            <!-- UserName 속성을 ViewModel에 바인딩 -->
+            <TextBox Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10"/>
+            <TextBlock Text="{Binding UserName}" FontSize="16" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>
