@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-
 namespace WpfApp241110
 {
     public partial class MainWindow : Window
@@ -7,7 +6,8 @@ namespace WpfApp241110
         public MainWindow ()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            // DataContext를 ViewModel 인스턴스로 설정
+            this.DataContext = new MainViewModel { Text = "Hello, DataContext!" };
         }
     }
 }

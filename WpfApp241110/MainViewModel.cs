@@ -4,16 +4,16 @@ namespace WpfApp241110
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private string _name;
-        public string Name
+        private string _text;
+        public string Text
         {
-            get { return _name; }
+            get { return _text; }
             set
             {
-                if (_name != value)
+                if (_text != value)
                 {
-                    _name = value;
-                    OnPropertyChanged(nameof(Name));
+                    _text = value;
+                    OnPropertyChanged(nameof(Text));
                 }
             }
         }
