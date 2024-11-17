@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-namespace WpfApp241118
+namespace WpfApp241120
 {
     public partial class MainWindow : Window
     {
