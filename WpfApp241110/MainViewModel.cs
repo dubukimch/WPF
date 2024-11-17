@@ -3,35 +3,37 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
 
-public class MainViewModel : INotifyPropertyChanged
+namespace WpfApp241118
 {
-    private string _name;
-
-    public string Name
+    public class MainViewModel : INotifyPropertyChanged
     {
-        get => _name;
-        set
+        private string _name;
+        public string Name
         {
-            _name = value;
-            OnPropertyChanged();
+            get => _name;
+            set
+            {
+                _name = value;
+                OnPropertyChanged();
+            }
         }
-    }
 
-    public ICommand ShowNameCommand { get; }
+        public ICommand ShowNameCommand { get; }
 
-    public MainViewModel ()
-    {
-        ShowNameCommand = new RelayCommand(ShowName);
-    }
+        public MainViewModel ()
+        {
+            ShowNameCommand = new RelayCommand(ShowName);
+        }
 
-    private void ShowName ()
-    {
-        MessageBox.Show($"Hello, {Name}!");
-    }
+        private void ShowName ()
+        {
+            MessageBox.Show($"Hello, {Name}!");
+        }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-    protected void OnPropertyChanged ([CallerMemberName] string propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged ([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
