@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace WpfApp241119
+namespace WpfApp241118
 {
     public partial class MainWindow : Window
     {
