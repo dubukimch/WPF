@@ -1,21 +1,18 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace WpfApp241113
+namespace WpfApp241117
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private User _selectedUser;
-        public ObservableCollection<User> UserList { get; set; }
-
-        public User SelectedUser
+        private string _name;
+        public string Name
         {
-            get => _selectedUser;
+            get => _name;
             set
             {
-                _selectedUser = value;
+                _name = value;
                 OnPropertyChanged();
             }
         }
@@ -23,12 +20,6 @@ namespace WpfApp241113
         public MainWindow ()
         {
             InitializeComponent();
-            UserList = new ObservableCollection<User>
-            {
-                new User { ID = 1, Name = "John Doe", Email = "john.doe@example.com", Phone = "123-456-7890" },
-                new User { ID = 2, Name = "Jane Smith", Email = "jane.smith@example.com", Phone = "098-765-4321" },
-                new User { ID = 3, Name = "Bob Johnson", Email = "bob.johnson@example.com", Phone = "555-123-4567" }
-            };
             DataContext = this;
         }
 
@@ -37,13 +28,5 @@ namespace WpfApp241113
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-    }
-
-    public class User
-    {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
     }
 }
