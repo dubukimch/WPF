@@ -1,26 +1,8 @@
-﻿<Window x:Class="WpfApp241113.MainWindow"
+﻿<Window x:Class="WpfApp241117.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="User List Example" Height="400" Width="600">
-    <StackPanel>
-        <ListView Name="userListView" ItemsSource="{Binding UserList}" SelectedItem="{Binding SelectedUser, Mode=TwoWay}">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" Width="50" />
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="150" />
-                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" Width="200" />
-                </GridView>
-            </ListView.View>
-        </ListView>
-
-        <TextBlock Text="Selected User Details:" FontWeight="Bold" Margin="10,20,0,0" />
-        <StackPanel DataContext="{Binding SelectedUser}">
-            <TextBlock Text="Name: " />
-            <TextBlock Text="{Binding Name}" />
-            <TextBlock Text="Email: " />
-            <TextBlock Text="{Binding Email}" />
-            <TextBlock Text="Phone: " />
-            <TextBlock Text="{Binding Phone}" />
-        </StackPanel>
-    </StackPanel>
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="클릭하세요" Click="Button_Click" Width="100" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
 </Window>
