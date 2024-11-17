@@ -1,17 +1,32 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Windows;
 
 namespace WpfApp241117
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        private string _name;
+        public string Name
+        {
+            get => _name;
+            set
+            {
+                _name = value;
+                OnPropertyChanged();
+            }
+        }
+
         public MainWindow ()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
-        private void Button_Click (object sender, RoutedEventArgs e)
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged ([CallerMemberName] string propertyName = null)
         {
-            MessageBox.Show("버튼이 클릭되었습니다!");
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
