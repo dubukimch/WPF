@@ -1,8 +1,11 @@
-﻿<Window x:Class="WpfApp241117.MainWindow"
+﻿<Window x:Class="WpfApp241119.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Data Binding Example" Height="200" Width="400">
+        Title="MVVM Example" Height="200" Width="400">
     <Grid>
-        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel>
+            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10"/>
+            <Button Content="Show Name" Command="{Binding ShowNameCommand}" Width="100" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>
