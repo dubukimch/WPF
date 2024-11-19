@@ -2,20 +2,10 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace WpfApp241117
+namespace WpfApp241119
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private string _name;
-        public string Name
-        {
-            get => _name;
-            set
-            {
-                _name = value;
-                OnPropertyChanged();
-            }
-        }
 
         public MainWindow ()
         {
