@@ -1,22 +1,17 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WpfApp241119
 {
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class MainWindow : Window
     {
-
         public MainWindow ()
         {
             InitializeComponent();
-            DataContext = this;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged ([CallerMemberName] string propertyName = null)
+        private void OnButtonClick (object sender, RoutedEventArgs e)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            MessageBox.Show("Button clicked!");
         }
     }
 }
