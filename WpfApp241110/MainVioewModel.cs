@@ -22,7 +22,7 @@ public class MainViewModel : INotifyPropertyChanged
     public MainViewModel ()
     {
         // 명령을 초기화할 때, 실행할 메서드를 전달
-        ShowNameCommand = new RelayCommand(ShowName);
+        //ShowNameCommand = new RelayCommand(ShowName);
     }
 
     private void ShowName ()
