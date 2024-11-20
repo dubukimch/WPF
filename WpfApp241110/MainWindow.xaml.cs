@@ -6,7 +6,11 @@ namespace WpfApp241120
         public MainWindow ()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+        }
+
+        private void OnButtonClick (object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Button clicked!");
         }
     }
 }
