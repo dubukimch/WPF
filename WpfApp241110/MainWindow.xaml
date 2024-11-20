@@ -4,9 +4,17 @@
         Title="ItemsPresenter Example" Height="350" Width="525">
     <Grid>
         <ItemsControl Name="myItemsControl" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border BorderBrush="Black" BorderThickness="2" Padding="10">
+                        <!-- ItemsPresenter를 명시적으로 지정 -->
+                        <ItemsPresenter />
+                    </Border>
+                </ControlTemplate>
+            </ItemsControl.Template>
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <StackPanel Orientation="Vertical"/>
+                    <StackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>

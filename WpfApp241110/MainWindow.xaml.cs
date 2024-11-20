@@ -10,9 +10,9 @@ namespace WpfApp241121
         {
             InitializeComponent();
 
-            myItemsControl.Items.Add("Item 1");
-            myItemsControl.Items.Add("Item 2");
-            myItemsControl.Items.Add("Item 3");
+            myItemsControl.Items.Add("Item A");
+            myItemsControl.Items.Add("Item B");
+            myItemsControl.Items.Add("Item C");
         }
     }
 }
