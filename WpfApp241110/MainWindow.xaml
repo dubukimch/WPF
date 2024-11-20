@@ -1,23 +1,23 @@
 ﻿<Window x:Class="WpfApp241120.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="200" Width="300">
+        Title="Resource Example" Height="200" Width="400">
+    <Window.Resources>
+        <!-- 브러시 리소스 -->
+        <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="LightBlue" />
+
+        <!-- 스타일 리소스 -->
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonBackgroundBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        <Button Content="Click Me" Width="100" Height="50">
-            <Button.Triggers>
-                <EventTrigger RoutedEvent="Button.Click">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <ColorAnimation Storyboard.TargetName="buttonBackground"
-                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            From="Red" To="SteelBlue" Duration="0:0:1" />
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Button.Triggers>
-            <Button.Background>
-                <SolidColorBrush x:Name="buttonBackground" Color="Red"/>
-            </Button.Background>
-        </Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Dynamic Button" Background="{DynamicResource ButtonBackgroundBrush}" />
+        </StackPanel>
     </Grid>
 </Window>
