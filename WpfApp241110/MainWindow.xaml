@@ -1,27 +1,23 @@
 ﻿<Window x:Class="WpfApp241120.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Control States Example" Height="200" Width="400">
+        Title="MainWindow" Height="200" Width="300">
     <Grid>
-        <Button Width="150" Height="50" Content="Hover or Click Me">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="Gray" BorderThickness="1">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="LightGreen" />
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="DarkGreen" />
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Background" Value="LightGray" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Button.Template>
+        <Button Content="Click Me" Width="100" Height="50">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetName="buttonBackground"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            From="Red" To="SteelBlue" Duration="0:0:1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+            <Button.Background>
+                <SolidColorBrush x:Name="buttonBackground" Color="Red"/>
+            </Button.Background>
         </Button>
     </Grid>
 </Window>
