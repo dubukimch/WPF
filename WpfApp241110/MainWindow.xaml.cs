@@ -9,10 +9,6 @@ namespace WpfApp241121
         public MainWindow ()
         {
             InitializeComponent();
-
-            myItemsControl.Items.Add("Item A");
-            myItemsControl.Items.Add("Item B");
-            myItemsControl.Items.Add("Item C");
         }
     }
 }
