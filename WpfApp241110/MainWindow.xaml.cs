@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace WpfApp241121
+namespace WpfApp241124
 {
     public partial class MainWindow : Window
     {
@@ -10,9 +10,6 @@ namespace WpfApp241121
         {
             InitializeComponent();
 
-            myItemsControl.Items.Add("Item A");
-            myItemsControl.Items.Add("Item B");
-            myItemsControl.Items.Add("Item C");
         }
     }
 }
