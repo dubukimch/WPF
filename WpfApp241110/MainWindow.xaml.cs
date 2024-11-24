@@ -1,6 +1,5 @@
-﻿// MainWindow.xaml.cs
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows;
+using WpfApp241110;
 
 namespace WpfApp241124
 {
@@ -9,7 +8,6 @@ namespace WpfApp241124
         public MainWindow ()
         {
             InitializeComponent();
-
         }
     }
 }
