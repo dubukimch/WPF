@@ -3,24 +3,75 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Composite Animation Example" Height="300" Width="300">
     <Grid>
-        <Ellipse Fill="LightBlue" Width="50" Height="50">
-            <Ellipse.RenderTransform>
-                <TranslateTransform x:Name="ellipseTransform"/>
-            </Ellipse.RenderTransform>
-            <Ellipse.Triggers>
-                <EventTrigger RoutedEvent="Ellipse.MouseEnter">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <!-- 위치 변경 -->
-                            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
-                                             From="0" To="200" Duration="0:0:1"/>
-                            <!-- 색상 변경 -->
-                            <ColorAnimation Storyboard.TargetProperty="(Fill).(SolidColorBrush.Color)"
-                                            From="LightBlue" To="LightCoral" Duration="0:0:1"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Ellipse.Triggers>
-        </Ellipse>
+        <!--Grid-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Header" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+        <TextBox Text="Content" Grid.Row="1" Grid.Column="0" />
+        <Button Content="Submit" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Text="Footer" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+    </Grid>
+    <!--StackPanel-->
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Name:" />
+        <TextBox Width="200" />
+        <Button Content="Submit" HorizontalAlignment="Left" />
+    </StackPanel>
+    <!--WrapPanel-->
+    <WrapPanel ItemWidth="100" ItemHeight="30">
+        <Button Content="Button 1" />
+        <Button Content="Button 2" />
+        <Button Content="Button 3" />
+        <Button Content="Button 4" />
+        <Button Content="Button 5" />
+    </WrapPanel>
+    <!--DockPanel-->
+    <DockPanel>
+        <TextBlock Text="Header" DockPanel.Dock="Top" Background="LightBlue" />
+        <TextBlock Text="Footer" DockPanel.Dock="Bottom" Background="LightGreen" />
+        <TextBlock Text="Sidebar" DockPanel.Dock="Left" Background="LightGray" />
+        <TextBlock Text="Main Content" Background="White" />
+    </DockPanel>
+    <!--Canvas-->
+    <Canvas>
+        <Button Content="Button 1" Canvas.Left="50" Canvas.Top="20" />
+        <Button Content="Button 2" Canvas.Left="150" Canvas.Top="50" />
+    </Canvas>
+    <!--UniformGrid-->
+    <UniformGrid Rows="2" Columns="3">
+        <Button Content="1" />
+        <Button Content="2" />
+        <Button Content="3" />
+        <Button Content="4" />
+        <Button Content="5" />
+        <Button Content="6" />
+    </UniformGrid>
+    <!--Expander + ScrollViewer-->
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Expander Header="Section 1">
+                <TextBlock Text="Content for section 1." />
+            </Expander>
+            <Expander Header="Section 2">
+                <TextBlock Text="Content for section 2." />
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+
+    <!--Responsive Layout-->
+    <Viewbox>
+        <Grid>
+            <TextBlock Text="This is a responsive layout" FontSize="20" />
+        </Grid>
+    </Viewbox>
     </Grid>
 </Window>
