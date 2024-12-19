@@ -1,6 +1,7 @@
-﻿using System.Windows;
+﻿using SynfusionWpfApp241129;
+using System.Windows;
 
-namespace SyncfusionMapExample
+namespace SynfusionWpfApp241129
 {
     public partial class MainWindow : Window
     {
@@ -8,5 +9,22 @@ namespace SyncfusionMapExample
         {
             InitializeComponent();
         }
+        private void OpenMapViewer_Click (object sender, RoutedEventArgs e)
+        {
+            MapWindow mapWindow = new MapWindow();
+            mapWindow.Show();
+        }
+
+        private void OpenExcelViewer_Click (object sender, RoutedEventArgs e)
+        {
+            FileLoadWindow excelWindow = new FileLoadWindow();
+            excelWindow.Show();
+        }
+
+        //private void OpenPptViewer_Click (object sender, RoutedEventArgs e)
+        //{
+        //    PptWindow pptWindow = new PptWindow();
+        //    pptWindow.Show();
+        //}
     }
 }
