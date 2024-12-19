@@ -1,0 +1,35 @@
+﻿<Window x:Class="SynfusionWpfApp241129.MapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SyncfusionMapExample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="Syncfusion Map Example" Height="600" Width="800">
+    <Grid>
+        <!-- ViewModel Binding -->
+        <Grid.DataContext>
+            <local:ViewModel />
+        </Grid.DataContext>
+
+        <!-- Syncfusion Map -->
+        <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <!-- Shape File Layer -->
+                <syncfusion:ShapeFileLayer ItemsSource="{Binding CountryData}"
+                                           ShapeIDPath="ADM0_A3_US"
+                                           ShapeIDTableField="ADM0_A3_US"
+                                           Uri="C:\Users\dlfkr\OneDrive\문서\카카오톡 받은 파일\SynfusionWpfApp241129\SynfusionWpfApp241129\countries_usa\ne_10m_admin_0_countries_usa.shp">
+
+                    <!-- Shape Settings -->
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeValuePath="SOVEREIGNT">
+                            <syncfusion:ShapeSetting.FillSetting>
+                                <syncfusion:ShapeFillSetting AutoFillColors="True" />
+                            </syncfusion:ShapeSetting.FillSetting>
+                        </syncfusion:ShapeSetting>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
+    </Grid>
+</Window>

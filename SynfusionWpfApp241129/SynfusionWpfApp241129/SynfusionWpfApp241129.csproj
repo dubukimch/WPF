@@ -10,9 +10,16 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Maps.MapControl.WPF" Version="1.0.0.3" />
-    <PackageReference Include="Syncfusion.Licensing" Version="27.2.5" />
-    <PackageReference Include="Syncfusion.SfChart.WPF" Version="27.2.4" />
-    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="27.2.5" />
+    <PackageReference Include="Microsoft.Office.Interop.PowerPoint" Version="15.0.4420.1018" />
+    <PackageReference Include="Syncfusion.Licensing" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.Presentation.Wpf" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.PresentationToPdfConverter.Wpf" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.SfSpreadsheet.WPF" Version="28.1.33" />
+    <PackageReference Include="Syncfusion.SfSpreadsheetHelper.WPF" Version="28.1.33" />
   </ItemGroup>
 
   <ItemGroup>
