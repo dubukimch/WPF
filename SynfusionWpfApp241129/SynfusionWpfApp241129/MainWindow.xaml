@@ -21,5 +21,12 @@
                 Content="Open FileLoad Viewer"
                 Width="150" Height="50"
                 Click="OpenExcelViewer_Click"/>
+
+        <Button Content="Open Chart Window"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="150"
+                Height="50"
+                Click="OpenChartWindow_Click" />
     </StackPanel>
 </Window>
