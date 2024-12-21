@@ -21,10 +21,11 @@ namespace SynfusionWpfApp241129
             excelWindow.Show();
         }
 
-        //private void OpenPptViewer_Click (object sender, RoutedEventArgs e)
-        //{
-        //    PptWindow pptWindow = new PptWindow();
-        //    pptWindow.Show();
-        //}
+        private void OpenChartWindow_Click (object sender, RoutedEventArgs e)
+        {
+            // ChartWindow를 새 창으로 엽니다.
+            ChartWindow chartWindow = new ChartWindow();
+            chartWindow.Show();
+        }
     }
 }
