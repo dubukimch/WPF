@@ -1,0 +1,20 @@
+﻿<Window x:Class="SynfusionWpfApp241129.TabbedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="Tabbed Window" Height="400" Width="600">
+    <DockPanel>
+        <!-- 버튼 영역 -->
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="10">
+            <Button Content="Add Tab" Width="100" Margin="5" Click="AddTab_Click" />
+            <Button Content="Remove Tab" Width="100" Margin="5" Click="RemoveTab_Click" />
+        </StackPanel>
+
+        <!-- Syncfusion TabControl -->
+        <syncfusion:TabControlExt x:Name="TabControl" Margin="10">
+            <syncfusion:TabItemExt Header="Default Tab">
+                <TextBlock Text="This is the default tab." Margin="10" />
+            </syncfusion:TabItemExt>
+        </syncfusion:TabControlExt>
+    </DockPanel>
+</Window>

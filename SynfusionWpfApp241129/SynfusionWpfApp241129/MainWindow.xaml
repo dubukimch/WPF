@@ -20,13 +20,20 @@
         <Button Margin="10"
                 Content="Open FileLoad Viewer"
                 Width="150" Height="50"
-                Click="OpenExcelViewer_Click"/>
+                Click="OpenFileViewer_Click"/>
 
-        <Button Content="Open Chart Window"
+        <Button Margin="10"
+                Content="Open Chart Window"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Width="150"
                 Height="50"
                 Click="OpenChartWindow_Click" />
+        <!-- 새로운 버튼 -->
+        <Button Margin="10"
+                Content="Open Tab Window"
+                Width="150"
+                Height="50"
+                Click="OpenTabWindow_Click" />
     </StackPanel>
 </Window>
