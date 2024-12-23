@@ -15,7 +15,7 @@ namespace SynfusionWpfApp241129
             mapWindow.Show();
         }
 
-        private void OpenExcelViewer_Click (object sender, RoutedEventArgs e)
+        private void OpenFileViewer_Click (object sender, RoutedEventArgs e)
         {
             FileLoadWindow excelWindow = new FileLoadWindow();
             excelWindow.Show();
@@ -26,6 +26,12 @@ namespace SynfusionWpfApp241129
             // ChartWindow를 새 창으로 엽니다.
             ChartWindow chartWindow = new ChartWindow();
             chartWindow.Show();
+        }
+        private void OpenTabWindow_Click (object sender, RoutedEventArgs e)
+        {
+            // TabbedWindow 열기
+            var tabbedWindow = new TabbedWindow();
+            tabbedWindow.Show();
         }
     }
 }
