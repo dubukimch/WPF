@@ -11,17 +11,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Maps.MapControl.WPF" Version="1.0.0.3" />
     <PackageReference Include="Microsoft.Office.Interop.PowerPoint" Version="15.0.4420.1018" />
-    <PackageReference Include="Syncfusion.Licensing" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.Presentation.Wpf" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.PresentationToPdfConverter.Wpf" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.SfChart.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.SfSpreadsheet.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.SfSpreadsheetHelper.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.Shared.WPF" Version="28.1.35" />
-    <PackageReference Include="Syncfusion.Tools.WPF" Version="28.1.35" />
+    <PackageReference Include="Syncfusion.Licensing" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.Presentation.Wpf" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.PresentationToPdfConverter.Wpf" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfSpreadsheet.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfSpreadsheetHelper.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.Tools.WPF" Version="28.1.36" />
   </ItemGroup>
 
   <ItemGroup>

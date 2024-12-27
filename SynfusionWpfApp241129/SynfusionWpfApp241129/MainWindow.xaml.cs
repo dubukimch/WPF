@@ -33,5 +33,10 @@ namespace SynfusionWpfApp241129
             var tabbedWindow = new TabbedWindow();
             tabbedWindow.Show();
         }
+        private void OpenNavigationDrawer_Click (object sender, RoutedEventArgs e)
+        {
+            SfNavigationDrawerWindow navigationDrawerWindow = new SfNavigationDrawerWindow();
+            navigationDrawerWindow.Show();
+        }
     }
 }
