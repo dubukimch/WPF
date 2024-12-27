@@ -4,24 +4,21 @@
         xmlns:local="clr-namespace:SyncfusionMapExample"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         Title="Syncfusion Map Example" Height="600" Width="800">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-        <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            --><!-- 첫 번째 행 --><!--
-            <ColumnDefinition Width="Auto"/>
-            --><!-- 두 번째 행 --><!--
-        </Grid.ColumnDefinitions>-->
+    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        <!-- Map Window 버튼 -->
         <Button Margin="10"
                 Content="Open Map Viewer"
                 Width="150" Height="50"
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Click="OpenMapViewer_Click"/>
 
+        <!-- FileLoad Window 버튼 -->
         <Button Margin="10"
                 Content="Open FileLoad Viewer"
                 Width="150" Height="50"
                 Click="OpenFileViewer_Click"/>
 
+        <!-- BarChart Window 버튼 -->
         <Button Margin="10"
                 Content="Open Chart Window"
                 HorizontalAlignment="Center"
@@ -29,11 +26,21 @@
                 Width="150"
                 Height="50"
                 Click="OpenChartWindow_Click" />
-        <!-- 새로운 버튼 -->
+
+        <!-- Tab Window 버튼 -->
         <Button Margin="10"
                 Content="Open Tab Window"
                 Width="150"
                 Height="50"
                 Click="OpenTabWindow_Click" />
-    </StackPanel>
+
+        <!-- Navigation Drawer Window 버튼 -->
+        <Button Content="Open Navigation Drawer"
+                Width="200"
+                Height="50"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="10"
+                Click="OpenNavigationDrawer_Click" />
+    </WrapPanel>
 </Window>

@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="SynfusionWpfApp241129.SettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="Auto" Width="Auto">
+    <Grid>
+        <TextBlock
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="This is the Settings Page" />
+    </Grid>
+</UserControl>
