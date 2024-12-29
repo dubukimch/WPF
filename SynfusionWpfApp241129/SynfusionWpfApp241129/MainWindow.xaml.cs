@@ -38,5 +38,10 @@ namespace SynfusionWpfApp241129
             SfNavigationDrawerWindow navigationDrawerWindow = new SfNavigationDrawerWindow();
             navigationDrawerWindow.Show();
         }
+        private void DataGrid_Click (object sender, RoutedEventArgs e)
+        {
+            DataGridWindow dataGridWindow = new DataGridWindow();
+            dataGridWindow.Show();
+        }
     }
 }

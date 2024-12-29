@@ -42,5 +42,14 @@
                 HorizontalAlignment="Center"
                 Margin="10"
                 Click="OpenNavigationDrawer_Click" />
+
+        <!-- Data Grid Window 버튼 -->
+        <Button Content="Open DataGrid Drawer"
+        Width="200"
+        Height="50"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        Margin="10"
+        Click="DataGrid_Click" />
     </WrapPanel>
 </Window>
