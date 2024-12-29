@@ -16,6 +16,7 @@
     <PackageReference Include="Syncfusion.Presentation.Wpf" Version="28.1.36" />
     <PackageReference Include="Syncfusion.PresentationToPdfConverter.Wpf" Version="28.1.36" />
     <PackageReference Include="Syncfusion.SfChart.WPF" Version="28.1.36" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="28.1.36" />
     <PackageReference Include="Syncfusion.SfMaps.WPF" Version="28.1.36" />
     <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="28.1.36" />
     <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="28.1.36" />
