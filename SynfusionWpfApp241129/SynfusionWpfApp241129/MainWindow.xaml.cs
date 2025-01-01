@@ -43,5 +43,10 @@ namespace SynfusionWpfApp241129
             DataGridWindow dataGridWindow = new DataGridWindow();
             dataGridWindow.Show();
         }
+        private void ChangeThemeButton_Click (object sender, RoutedEventArgs e)
+        {
+            var themeSelector = new ThemeSelectorWindow();
+            themeSelector.ShowDialog();
+        }
     }
 }

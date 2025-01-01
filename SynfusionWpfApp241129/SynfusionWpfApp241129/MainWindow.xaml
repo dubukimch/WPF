@@ -51,5 +51,13 @@
         HorizontalAlignment="Center"
         Margin="10"
         Click="DataGrid_Click" />
+
+        <!-- Theme Window 버튼 -->
+        <Button Content="Open Change Theme"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Center"
+                             Width="150"
+                             Height="40"
+                             Click="ChangeThemeButton_Click"/>
     </WrapPanel>
 </Window>

@@ -6,9 +6,9 @@
         Title="Syncfusion Map Example" Height="600" Width="800">
     <Grid>
         <!-- ViewModel Binding -->
-        <Grid.DataContext>
-            <local:ViewModel />
-        </Grid.DataContext>
+        <!--<Grid.DataContext>-->
+            <!--<local:ViewModel />-->
+        <!--</Grid.DataContext>-->
 
         <!-- Syncfusion Map -->
         <syncfusion:SfMap>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="SynfusionWpfApp241129.ThemeSelectorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="Select Theme" Height="300" Width="400">
+    <Grid>
+        <ListBox Name="ThemeListBox" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ListBoxItem Content="MaterialDark" />
+            <ListBoxItem Content="FluentLight" />
+            <ListBoxItem Content="Office2019Colorful" />
+        </ListBox>
+        <Button Content="Apply"
+                             VerticalAlignment="Bottom"
+                             HorizontalAlignment="Center"
+                             Width="100"
+                             Margin="0,0,0,20"
+                             Click="ApplyThemeButton_Click"/>
+    </Grid>
+</Window>

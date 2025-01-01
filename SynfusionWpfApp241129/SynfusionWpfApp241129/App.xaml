@@ -1,9 +1,15 @@
 ﻿<Application x:Class="SynfusionWpfApp241129.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SynfusionWpfApp241129"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- MaterialDark 테마 -->
+                <ResourceDictionary Source="pack://application:,,,/Syncfusion.Themes.MaterialDark.WPF;component/Theme.xaml" />
+                <!-- FluentLight 테마 -->
+                <ResourceDictionary Source="pack://application:,,,/Syncfusion.Themes.FluentLight.WPF;component/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
